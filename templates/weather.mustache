@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>weatherstalker</title>
+		<link rel="stylesheet" type="text/css" href="./styles/index.css">
+		<script src="//code.jquery.com/jquery-1.12.0.min.js"></script>
+		<script src="./scripts/weather.js"></script>
+	</head>
+	<body>
+		<h2>{{description}} at {{temperature}}°{{units}}</h2>
+		<p>Humidity in {{name}} is {{humidity}}%. Wind is moving {{wind.direction}} at {{wind.speed}} meters per second.</p>
+		<form action="/" method="POST">
+			<input type="text" name="location">
+			<input type="submit" value="Get Weather">
+		</form>
+	</body>
+</html>
